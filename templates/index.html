@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Random Cat</title>
+    <link href="{{ url_for('static', filename='style.css')}}" rel="stylesheet">
+    <button onclick="window.location.href='/'" class="classBtn">Gerar Gato Aleatorio</button>
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico')}}">
+</head>
+<body>
+    <div class="imgContainer">
+        <img  src="data:image/png;base64,{{ data }}">
+    </div>
+
+</body>
+</html>
